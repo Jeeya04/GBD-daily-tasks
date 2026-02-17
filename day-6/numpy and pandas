@@ -1,0 +1,142 @@
+# ============================================
+# DAY 6 TASK: NUMPY AND PANDAS
+# ============================================
+
+import numpy as np
+import pandas as pd
+
+print("========== NUMPY TASKS ==========")
+
+# Task 1: Create array from 10 to 50 with step 5
+arr1 = np.arange(10, 51, 5)
+print("\nTask 1:", arr1)
+
+
+# Task 2: Create 3x3 matrix with random integers between 1 and 100
+matrix = np.random.randint(1, 101, size=(3,3))
+print("\nTask 2:\n", matrix)
+
+
+# Task 3: Find mean, median, and standard deviation
+arr2 = np.array([10, 20, 30, 40, 50])
+print("\nTask 3:")
+print("Mean:", np.mean(arr2))
+print("Median:", np.median(arr2))
+print("Standard Deviation:", np.std(arr2))
+
+
+# Task 4: Reshape 1D array of 12 elements into 3x4 matrix
+arr3 = np.arange(1, 13)
+reshaped = arr3.reshape(3, 4)
+print("\nTask 4:\n", reshaped)
+
+
+# Task 5: Extract all even numbers
+arr4 = np.array([10, 15, 20, 25, 30, 35, 40])
+even_numbers = arr4[arr4 % 2 == 0]
+print("\nTask 5:", even_numbers)
+
+
+# Task 6: Replace all values greater than 50 with 0
+arr5 = np.array([10, 60, 30, 80, 50, 90])
+arr5[arr5 > 50] = 0
+print("\nTask 6:", arr5)
+
+
+# Task 7: Element-wise multiplication
+a = np.array([1,2,3])
+b = np.array([4,5,6])
+multiplication = a * b
+print("\nTask 7:", multiplication)
+
+
+# Task 8: Dot product of two matrices
+mat1 = np.array([[1,2],[3,4]])
+mat2 = np.array([[5,6],[7,8]])
+dot_product = np.dot(mat1, mat2)
+print("\nTask 8:\n", dot_product)
+
+
+# Task 9: Find index of maximum and minimum values
+arr6 = np.array([10, 50, 20, 5, 80])
+print("\nTask 9:")
+print("Max index:", np.argmax(arr6))
+print("Min index:", np.argmin(arr6))
+
+
+# Task 10: Normalize array between 0 and 1
+arr7 = np.array([10, 20, 30, 40, 50])
+normalized = (arr7 - np.min(arr7)) / (np.max(arr7) - np.min(arr7))
+print("\nTask 10:", normalized)
+
+
+
+print("\n========== PANDAS TASKS ==========")
+
+# Task 11: Create DataFrame from dictionary
+data = {
+    "ID": [1,2,3,4],
+    "Name": ["Ram", "Sita", "Hari", "Gita"],
+    "Age": [20, 21, 22, 23],
+    "Salary": [20000, 25000, 30000, 35000],
+    "Department": ["IT", "HR", "IT", "Finance"]
+}
+
+df = pd.DataFrame(data)
+print("\nTask 11:\n", df)
+
+
+# Task 12: Display first 5 rows
+print("\nTask 12:\n", df.head())
+
+
+# Task 13: Select specific columns
+print("\nTask 13:\n", df[["Name", "Salary"]])
+
+
+# Task 14: Filter rows where Salary > 25000
+filtered = df[df["Salary"] > 25000]
+print("\nTask 14:\n", filtered)
+
+
+# Task 15: Add new column Bonus
+df["Bonus"] = df["Salary"] * 0.1
+print("\nTask 15:\n", df)
+
+
+# Task 16: Drop rows with missing values
+df_clean = df.dropna()
+print("\nTask 16:\n", df_clean)
+
+
+# Task 17: Group by Department and find average salary
+grouped = df.groupby("Department")["Salary"].mean()
+print("\nTask 17:\n", grouped)
+
+
+# Task 18: Merge two DataFrames
+df_extra = pd.DataFrame({
+    "ID": [1,2,3,4],
+    "City": ["Kathmandu", "Pokhara", "Lalitpur", "Bhaktapur"]
+})
+
+merged = pd.merge(df, df_extra, on="ID")
+print("\nTask 18:\n", merged)
+
+
+# Task 19: Convert column to datetime
+df["Joining_Date"] = ["2024-01-10", "2023-05-15", "2022-08-20", "2021-12-01"]
+df["Joining_Date"] = pd.to_datetime(df["Joining_Date"])
+print("\nTask 19:\n", df)
+
+
+# Task 20: Create pivot table
+pivot = pd.pivot_table(
+    df,
+    values="Salary",
+    index="Department",
+    columns="Age",
+    aggfunc="mean"
+)
+
+print("\nTask 20 Pivot Table:\n", pivot)
