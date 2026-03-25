@@ -1,0 +1,31 @@
+order_id,customer_name,age,city,product,category,quantity,unit_price,discount_pct,order_date,status
+1001,Alice Johnson,28,New York,Laptop,Electronics,1,1200.00,10,2024-01-05,Completed
+1002,Bob Smith,34,Los Angeles,Headphones,Electronics,2,85.50,5,2024-01-08,Completed
+1003,Carol White,22,Chicago,Python Book,Books,3,45.00,0,2024-01-10,Completed
+1004,David Brown,45,Houston,Office Chair,Furniture,1,320.00,15,2024-01-12,Cancelled
+1005,Eva Martinez,31,Phoenix,Keyboard,Electronics,2,75.00,0,2024-01-15,Completed
+1006,Frank Lee,29,Philadelphia,Monitor,Electronics,1,450.00,10,2024-01-18,Completed
+1007,Grace Kim,38,San Antonio,Desk,Furniture,1,540.00,5,2024-01-20,Pending
+1008,Henry Davis,26,San Diego,Data Science Book,Books,2,60.00,0,2024-01-22,Completed
+1009,Isla Wilson,33,Dallas,Mouse,Electronics,3,35.00,0,2024-01-25,Completed
+1010,Jack Taylor,41,San Jose,Standing Desk,Furniture,1,780.00,20,2024-02-01,Completed
+1011,Karen Anderson,27,Austin,Webcam,Electronics,1,120.00,5,2024-02-03,Cancelled
+1012,Liam Thomas,36,Jacksonville,Laptop,Electronics,1,1350.00,10,2024-02-05,Completed
+1013,Mia Jackson,24,Fort Worth,SQL Book,Books,1,50.00,0,2024-02-08,Completed
+1014,Noah White,52,Columbus,Bookshelf,Furniture,2,210.00,0,2024-02-10,Pending
+1015,Olivia Harris,30,Charlotte,Headphones,Electronics,1,95.00,5,2024-02-12,Completed
+1016,Peter Martin,44,Indianapolis,Keyboard,Electronics,3,70.00,10,2024-02-15,Completed
+1017,Quinn Garcia,28,San Francisco,Monitor,Electronics,2,480.00,15,2024-02-18,Completed
+1018,Rachel Martinez,35,Seattle,Office Chair,Furniture,1,295.00,0,2024-02-20,Cancelled
+1019,Sam Robinson,23,Denver,Machine Learning Book,Books,2,55.00,5,2024-02-22,Completed
+1020,Tina Clark,40,Nashville,Laptop,Electronics,1,999.00,0,2024-03-01,Completed
+1021,Uma Lewis,29,Baltimore,Webcam,Electronics,2,110.00,10,2024-03-03,Completed
+1022,Victor Walker,47,Louisville,Desk,Furniture,1,620.00,5,2024-03-05,Pending
+1023,Wendy Hall,32,Portland,Mouse,Electronics,4,30.00,0,2024-03-08,Completed
+1024,Xander Allen,25,Las Vegas,Python Book,Books,1,45.00,0,2024-03-10,Completed
+1025,Yara Young,39,Memphis,Headphones,Electronics,1,85.50,0,2024-03-12,Completed
+1026,Zoe Hernandez,27,Oklahoma City,Monitor,Electronics,1,520.00,20,2024-03-15,Completed
+1027,Aaron King,43,Tucson,Standing Desk,Furniture,1,810.00,10,2024-03-18,Cancelled
+1028,Beth Wright,31,Fresno,Keyboard,Electronics,2,80.00,5,2024-03-20,Completed
+1029,Carl Lopez,26,Sacramento,Data Science Book,Books,3,60.00,0,2024-03-22,Completed
+1030,Diana Hill,37,Mesa,Laptop,Electronics,1,1100.00,15,2024-03-25,Completed
